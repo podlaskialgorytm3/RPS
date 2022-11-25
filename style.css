@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+body{
+    background-color:  rgb(25, 181, 181);
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    margin-top: 50px;
+}
+.score-panel{
+    margin-top: 50px;
+    height: 100px;
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 40px;
+}
+.play-panel{
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+}
+.choose-panel{
+    margin-top: 30px;
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+.choosen,.player-choose,.computer-choose{
+    width: 200px;
+    height: 250px;
+    background-color: rgb(14, 122, 122);
+    border-radius: 20px;
+    box-shadow: 8px 8px 24px 0px rgb(30, 67, 86);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.play{
+    background-color: rgba(131, 244, 244, 0);
+}
+.choosen:hover{
+    box-shadow: 8px 8px 24px 0px rgb(1, 4, 6);
+}
+img{
+    width: 150px;
+}
+div.footer-menu{
+    margin-top: 50px;
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(14, 122, 122);
+    box-shadow: 8px 8px 10px 0px rgb(30, 67, 86);
+    border: transparent;
+    border-radius: 20px;
+    font-size: 30px;
+}
+button:hover{
+    box-shadow: 8px 8px 24px 0px rgb(10, 39, 59);
+}
+@media (orientation: portrait){
+    body{
+        width: 100vh;
+    }
+    .score-panel{
+        height: 100px;
+        width: 500px;
+        font-size: 30px;
+    }
+    .play-panel{
+        height: 300px;
+        width: 500px;
+    }
+}
